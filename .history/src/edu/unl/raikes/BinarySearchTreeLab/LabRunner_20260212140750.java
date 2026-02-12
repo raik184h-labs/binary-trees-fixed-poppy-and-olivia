@@ -95,11 +95,7 @@ public class LabRunner {
         Person found = bst.search(key);
         // print the results
         System.out.println("Found the person with NUID " + key + ": ");
-        if (found == null) {
-            System.out.println("Could not find " + key + " because it does not exist.");
-        } else {
-            System.out.println("  " + found);
-        }
+        System.out.println("  " + found);
         System.out.println(bst);
     }
 
@@ -116,11 +112,7 @@ public class LabRunner {
         Person deleted = bst.delete(key);
         // print the results
         System.out.println("Deleted the person with NUID " + key + ": ");
-        if (deleted == null) {
-            System.out.println("Could not delete " + key + " because it does not exist.");
-        } else {
-            System.out.println(" " + deleted + " ");
-        }
+        System.out.println(" " + deleted + " ");
         System.out.println(bst);
     }
 }

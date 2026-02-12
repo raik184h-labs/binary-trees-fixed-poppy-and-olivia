@@ -78,6 +78,11 @@ public class LabRunner {
         bst.insert(person);
         // print the results
         System.out.println("Inserted the person with NUID " + person.key + ": ");
+		if (found == null) {
+            System.out.println("Could not find " + key + " because it does not exist.");
+        } else {
+            System.out.println("  " + found);
+        }
         System.out.println("  " + person);
         System.out.println(bst);
     }

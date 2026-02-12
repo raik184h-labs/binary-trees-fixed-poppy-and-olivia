@@ -78,6 +78,7 @@ public class LabRunner {
         bst.insert(person);
         // print the results
         System.out.println("Inserted the person with NUID " + person.key + ": ");
+		System.out.println("  " + found);
         System.out.println("  " + person);
         System.out.println(bst);
     }

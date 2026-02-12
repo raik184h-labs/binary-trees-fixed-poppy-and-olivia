@@ -95,11 +95,11 @@ public class LabRunner {
         Person found = bst.search(key);
         // print the results
         System.out.println("Found the person with NUID " + key + ": ");
-        if (found == null) {
-            System.out.println("Could not find " + key + " because it does not exist.");
+		if (found == null) {
+            System.out.println("Could not delete " + key + " because it does not exist.");
         } else {
             System.out.println("  " + found);
-        }
+		}
         System.out.println(bst);
     }
 
